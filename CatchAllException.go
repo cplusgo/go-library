@@ -1,9 +1,5 @@
 package go_library
 
-import (
-	"log"
-)
-
 /*
 模仿Java中的
 	try {
@@ -22,7 +18,6 @@ type TryCatchWorker interface {
 func Run(worker TryCatchWorker) {
 	defer func() {
 		if err := recover(); err != nil {
-			log.Fatal(err)
 			worker.Catch(err)
 		}
 	}()
