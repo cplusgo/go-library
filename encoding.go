@@ -35,6 +35,10 @@ func UnixSeconds() int64 {
 	return timestamp
 }
 
+func MapToXMLStringRe()  {
+
+}
+
 func MapToXMLString(data map[string]string) string {
 	var buf bytes.Buffer
 	buf.WriteString("<xml>")
